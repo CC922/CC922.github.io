@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/tags/'>
 
-<link rel="stylesheet" href="/scss/style.min.879ea7c0e4197cb386d4db69a416dd01077da24092c6aaa0eb3616a798554ba7.css"><meta property='og:title' content="Tags">
+<link rel="stylesheet" href="/scss/style.min.ea259b16034e54922498fee429a77a65f4b4a69aa1c17fbdba888eb22b121a28.css"><meta property='og:title' content="Tags">
 <meta property='og:description' content="演示说明">
 <meta property='og:url' content='http://localhost:1313/tags/'>
 <meta property='og:site_name' content='rhythm'>
@@ -53,7 +53,7 @@
         
             
             <figure class="site-avatar">
-                <a href="/">
+                <a href="https://cc922.github.io/">
                 
                     
                     
@@ -434,10 +434,43 @@
     </nav>
 
 <footer class="site-footer">
+    
+    <section class="totalcount">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了7篇文章 · 
+        总计2.33k字
+    </section>
+
+    
+    <section class="running-time">
+        本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
     <section class="copyright">
         &copy; 
         
-        2024 Cong
+        2024 rhythm
     </section>
     
     <section class="powerby">
@@ -464,6 +497,20 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2024-4-24'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>
