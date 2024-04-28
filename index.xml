@@ -7,7 +7,31 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Thu, 25 Apr 2024 20:45:59 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Apr 2024 19:54:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我的建站记录（二）</title>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
+        <pubDate>Sun, 28 Apr 2024 19:54:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
+        <description>&lt;h2 id=&#34;修改字体&#34;&gt;
+    &lt;a href=&#34;#%e4%bf%ae%e6%94%b9%e5%ad%97%e4%bd%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    修改字体
+&lt;/h2&gt;&lt;p&gt;将文章字体改为&lt;a class=&#34;link&#34; href=&#34;https://fonts.google.com/noto/specimen/Noto&amp;#43;Serif&amp;#43;SC&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;思源宋体&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考链接 &lt;a class=&#34;link&#34; href=&#34;https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;集成评论系统twikoo&#34;&gt;
+    &lt;a href=&#34;#%e9%9b%86%e6%88%90%e8%af%84%e8%ae%ba%e7%b3%bb%e7%bb%9ftwikoo&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    集成评论系统Twikoo
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/intro.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://twikoo.js.org/intro.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;包括云函数部署和前端部署 &lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/quick-start.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;快速上手 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;题外话 wercle的DNS污染 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/cubeyu/articles/17451621.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>我的建站记录（一）</title>
         <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
         <pubDate>Thu, 25 Apr 2024 20:45:59 +0800</pubDate>
@@ -70,6 +94,7 @@
     Stack主题
 &lt;/h2&gt;&lt;p&gt;这里需要感谢这个视频&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15f4y157a6/?spm_id_from=333.1350.jump_directly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;600秒！带小白上手安装使用hugo-stack主题博客_哔哩哔哩_bilibili&lt;/a&gt;，让我最终把stack主题在github pages上呈现出来了。&lt;/p&gt;
+&lt;p&gt;我来做个测试。&lt;/p&gt;
 </description>
         </item>
         <item>
