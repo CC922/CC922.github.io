@@ -56,14 +56,14 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;img src="http://localhost:1313/%E5%85%B3%E4%BA%8E/cat.jpg" alt="Featured image of post 关于" /&gt;&lt;h1 id=&#34;关于我&#34;&gt;
+        <description>&lt;img src="http://localhost:1313/%E5%85%B3%E4%BA%8E/cat.jpg" alt="Featured image of post 关于" /&gt;&lt;h2 id=&#34;关于我&#34;&gt;
     &lt;a href=&#34;#%e5%85%b3%e4%ba%8e%e6%88%91&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     关于我
-&lt;/h1&gt;&lt;p&gt;间歇性踌躇满志，持续性混吃等死。&lt;/p&gt;
-&lt;h1 id=&#34;关于本博客&#34;&gt;
+&lt;/h2&gt;&lt;p&gt;间歇性踌躇满志，持续性混吃等死。&lt;/p&gt;
+&lt;h2 id=&#34;关于本博客&#34;&gt;
     &lt;a href=&#34;#%e5%85%b3%e4%ba%8e%e6%9c%ac%e5%8d%9a%e5%ae%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     关于本博客
-&lt;/h1&gt;&lt;p&gt;分享技术和所思所想。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;分享技术和所思所想。&lt;/p&gt;
 </description>
         </item>
         
