@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#\r前言\r虽然使用了现成的stack主题，但是也根据个人需要进行了一些修改，在修改过程中参考了很多博客，在此表示感谢。 #\r修改字体\r将文章字体改为思源宋体 参考链接 https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family #\r集成评论系统Twikoo\rhttps://twikoo.js.org/intro.html 包括云函数部署和前端部署 快速上手 | Twikoo 文档 题外话 vercle的DNS污染 Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园">
-<title>我的建站记录（二）</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 test test">
+<title>我的建站记录（三）</title>
 
-<link rel='canonical' href='https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/'>
+<link rel='canonical' href='https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/'>
 
-<link rel="stylesheet" href="/scss/style.min.c5a51624653d201e84fd08949caed844f03fb22377450813fef5d80037fc3a94.css"><meta property='og:title' content="我的建站记录（二）">
-<meta property='og:description' content="#\r前言\r虽然使用了现成的stack主题，但是也根据个人需要进行了一些修改，在修改过程中参考了很多博客，在此表示感谢。 #\r修改字体\r将文章字体改为思源宋体 参考链接 https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family #\r集成评论系统Twikoo\rhttps://twikoo.js.org/intro.html 包括云函数部署和前端部署 快速上手 | Twikoo 文档 题外话 vercle的DNS污染 Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园">
-<meta property='og:url' content='https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/'>
+<link rel="stylesheet" href="/scss/style.min.c5a51624653d201e84fd08949caed844f03fb22377450813fef5d80037fc3a94.css"><meta property='og:title' content="我的建站记录（三）">
+<meta property='og:description' content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 test test">
+<meta property='og:url' content='https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/'>
 <meta property='og:site_name' content='rhythm'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-04-28T19:54:09&#43;08:00'/><meta property='article:modified_time' content='2024-04-29T22:01:14&#43;08:00'/>
-<meta name="twitter:title" content="我的建站记录（二）">
-<meta name="twitter:description" content="#\r前言\r虽然使用了现成的stack主题，但是也根据个人需要进行了一些修改，在修改过程中参考了很多博客，在此表示感谢。 #\r修改字体\r将文章字体改为思源宋体 参考链接 https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family #\r集成评论系统Twikoo\rhttps://twikoo.js.org/intro.html 包括云函数部署和前端部署 快速上手 | Twikoo 文档 题外话 vercle的DNS污染 Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-04-29T23:36:52&#43;08:00'/><meta property='article:modified_time' content='2024-04-29T23:36:52&#43;08:00'/>
+<meta name="twitter:title" content="我的建站记录（三）">
+<meta name="twitter:description" content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 test test">
     <link rel="shortcut icon" href="/favicon.jpg" />
 
   
@@ -246,8 +246,7 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#修改字体">修改字体</a></li>
-    <li><a href="#集成评论系统twikoo">集成评论系统Twikoo</a></li>
+    <li><a href="#显示最后更新时间">显示最后更新时间</a></li>
   </ol>
 </nav>
         </div>
@@ -275,7 +274,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/">我的建站记录（二）</a>
+            <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/">我的建站记录（三）</a>
         </h2>
     
         
@@ -297,7 +296,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-04-28</time>
+                <time class="article-time--published">2024-04-29</time>
             </div>
         
 
@@ -316,42 +315,19 @@
     <h2 id="前言">
     <a href="#%e5%89%8d%e8%a8%80" class="header-anchor">#</a>
     前言
-</h2><p>虽然使用了现成的stack主题，但是也根据个人需要进行了一些修改，在修改过程中参考了很多博客，在此表示感谢。</p>
-<h2 id="修改字体">
-    <a href="#%e4%bf%ae%e6%94%b9%e5%ad%97%e4%bd%93" class="header-anchor">#</a>
-    修改字体
-</h2><p>将文章字体改为<a class="link" href="https://fonts.google.com/noto/specimen/Noto&#43;Serif&#43;SC"  target="_blank" rel="noopener"
-    >思源宋体</a></p>
-<p>参考链接 <a class="link" href="https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family"  target="_blank" rel="noopener"
-    >https://stack-docs.netlify.app/zh/modify-theme/example-custom-font-family</a></p>
-<h2 id="集成评论系统twikoo">
-    <a href="#%e9%9b%86%e6%88%90%e8%af%84%e8%ae%ba%e7%b3%bb%e7%bb%9ftwikoo" class="header-anchor">#</a>
-    集成评论系统Twikoo
-</h2><p><a class="link" href="https://twikoo.js.org/intro.html"  target="_blank" rel="noopener"
-    >https://twikoo.js.org/intro.html</a></p>
-<p>包括云函数部署和前端部署 <a class="link" href="https://twikoo.js.org/quick-start.html"  target="_blank" rel="noopener"
-    >快速上手 | Twikoo 文档</a></p>
-<p>题外话</p>
-<p>vercle的DNS污染 <a class="link" href="https://www.cnblogs.com/cubeyu/articles/17451621.html"  target="_blank" rel="noopener"
-    >Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园</a></p>
+</h2><p>这一篇主要记录一下在修改stack主题的过程中遇到的问题。</p>
+<h2 id="显示最后更新时间">
+    <a href="#%e6%98%be%e7%a4%ba%e6%9c%80%e5%90%8e%e6%9b%b4%e6%96%b0%e6%97%b6%e9%97%b4" class="header-anchor">#</a>
+    显示最后更新时间
+</h2><p>花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。</p>
+<p>test</p>
+<p>test</p>
 
 </section>
 
 
     <footer class="article-footer">
-    <section class="article-lastmod">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <span>
-            本文最后更新于 2024-04-29 22:01 CST
-        </span>
-    </section>
+    
     <section class="article-copyright">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -405,12 +381,12 @@
             
                 
 <article class="">
-    <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/">
+    <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">我的建站记录（三）</h2>
+            <h2 class="article-title">我的建站记录（二）</h2>
         </div>
     </a>
 </article>
