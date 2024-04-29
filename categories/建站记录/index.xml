@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>建站记录 on rhythm</title>
-        <link>https://example.com/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
         <description>Recent content in 建站记录 on rhythm</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Sun, 28 Apr 2024 19:54:09 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Apr 2024 19:54:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>我的建站记录（二）</title>
-        <link>https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
         <pubDate>Sun, 28 Apr 2024 19:54:09 +0800</pubDate>
         
-        <guid>https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -31,17 +31,18 @@
     &gt;https://twikoo.js.org/intro.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;包括云函数部署和前端部署 &lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/quick-start.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;快速上手 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;题外话 vercle的DNS污染 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/cubeyu/articles/17451621.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;题外话&lt;/p&gt;
+&lt;p&gt;vercle的DNS污染 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/cubeyu/articles/17451621.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vercel部署个人博客以及解决DNS污染问题 - cubeyu - 博客园&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>我的建站记录（一）</title>
-        <link>https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
         <pubDate>Thu, 25 Apr 2024 20:45:59 +0800</pubDate>
         
-        <guid>https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
-        <description>&lt;img src="https://example.com/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
 &lt;/h2&gt;&lt;p&gt;说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。&lt;/p&gt;
