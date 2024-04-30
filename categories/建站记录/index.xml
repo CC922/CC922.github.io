@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>建站记录 on rhythm</title>
-        <link>https://cc922.github.io/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
         <description>Recent content in 建站记录 on rhythm</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Mon, 29 Apr 2024 23:36:52 +0800</lastBuildDate><atom:link href="https://cc922.github.io/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 29 Apr 2024 23:36:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>我的建站记录（三）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</link>
         <pubDate>Mon, 29 Apr 2024 23:36:52 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</guid>
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -27,10 +27,10 @@
         </item>
         <item>
         <title>我的建站记录（二）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
         <pubDate>Sun, 28 Apr 2024 19:54:09 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -56,11 +56,11 @@
         </item>
         <item>
         <title>我的建站记录（一）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
         <pubDate>Thu, 25 Apr 2024 20:45:59 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
-        <description>&lt;img src="https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
 &lt;/h2&gt;&lt;p&gt;说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。&lt;/p&gt;
