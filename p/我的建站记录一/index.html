@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#\r前言\r说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。 在进行了相关信息搜集后，最终决定基于GitHub+Hugo搭建博客，采用Stack 主题。 #\r基于GitHub Pages创建个人站点\rGitHub Pages是通过GitHub托管和发布的公共网页。 官方提供的教程为GitHub Pages 快速入门 - GitHub 文档，完成以后就可以通过username.github.io访问。 教程讲的也比较清晰，下边主要说一下我在创建过程中踩过的坑。 由于长时间没有登录github，在登录github时会发送验证码到注册邮箱，需要将验证码填入才可登录。现在问题来了，我的注册邮箱是QQ邮箱，然而QQ邮箱接收不到github发送来的邮件。 解决方法参考Github登录用qq邮箱验证无法收到验证码的问题，即把github.com添加到邮箱的域名白名单。 当时我这样做了以后还是收不到邮件，非常抓狂，然后睡了一觉起来后，发现QQ邮箱收到了好几封邮件&hellip;&hellip; 不过之后在github再发送邮件时，就能即时收到了。所以这个问题成功解决。 创建仓库时，仓库名与用户名不同导致无法访问网站。 根据关于 GitHub Pages - GitHub 文档上说的，“若要发布用户站点，必须创建名为\u00a0&lt;username&gt;.github.io\u00a0的个人帐户拥有的存储库。” 解决方法很简单，就是把仓库名改为和用户名一致就行。 另外存个单个github帐号下添加多个github pages的方法，以后尝试一下。 #\rHugo\r我的操作系统为Win11，下载安装Hugo有几种方法，我选择用包管理器Chocolatey来安装Hugo。 Chocolatey的安装教程为Chocolatey Software | Installing Chocolatey，就是通过powershell来安装。 之后执行命令choco install hugo-extended来安装Hugo的扩展版。 Hugo安装完成后，就可以使用Hugo快速生成站点： 1 hugo new site /path/to/site 在/path/to/site文件夹下可以看到网站结构。就不细说了。 #\rStack主题\r这里需要感谢这个视频600秒！带小白上手安装使用hugo-stack主题博客_哔哩哔哩_bilibili，让我最终把stack主题在github pages上呈现出来了。 test test again test again">
 <title>我的建站记录（一）</title>
 
-<link rel='canonical' href='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/'>
+<link rel='canonical' href='https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/'>
 
 <link rel="stylesheet" href="/scss/style.min.c5a51624653d201e84fd08949caed844f03fb22377450813fef5d80037fc3a94.css"><meta property='og:title' content="我的建站记录（一）">
 <meta property='og:description' content="#\r前言\r说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。 在进行了相关信息搜集后，最终决定基于GitHub+Hugo搭建博客，采用Stack 主题。 #\r基于GitHub Pages创建个人站点\rGitHub Pages是通过GitHub托管和发布的公共网页。 官方提供的教程为GitHub Pages 快速入门 - GitHub 文档，完成以后就可以通过username.github.io访问。 教程讲的也比较清晰，下边主要说一下我在创建过程中踩过的坑。 由于长时间没有登录github，在登录github时会发送验证码到注册邮箱，需要将验证码填入才可登录。现在问题来了，我的注册邮箱是QQ邮箱，然而QQ邮箱接收不到github发送来的邮件。 解决方法参考Github登录用qq邮箱验证无法收到验证码的问题，即把github.com添加到邮箱的域名白名单。 当时我这样做了以后还是收不到邮件，非常抓狂，然后睡了一觉起来后，发现QQ邮箱收到了好几封邮件&hellip;&hellip; 不过之后在github再发送邮件时，就能即时收到了。所以这个问题成功解决。 创建仓库时，仓库名与用户名不同导致无法访问网站。 根据关于 GitHub Pages - GitHub 文档上说的，“若要发布用户站点，必须创建名为\u00a0&lt;username&gt;.github.io\u00a0的个人帐户拥有的存储库。” 解决方法很简单，就是把仓库名改为和用户名一致就行。 另外存个单个github帐号下添加多个github pages的方法，以后尝试一下。 #\rHugo\r我的操作系统为Win11，下载安装Hugo有几种方法，我选择用包管理器Chocolatey来安装Hugo。 Chocolatey的安装教程为Chocolatey Software | Installing Chocolatey，就是通过powershell来安装。 之后执行命令choco install hugo-extended来安装Hugo的扩展版。 Hugo安装完成后，就可以使用Hugo快速生成站点： 1 hugo new site /path/to/site 在/path/to/site文件夹下可以看到网站结构。就不细说了。 #\rStack主题\r这里需要感谢这个视频600秒！带小白上手安装使用hugo-stack主题博客_哔哩哔哩_bilibili，让我最终把stack主题在github pages上呈现出来了。 test test again test again">
-<meta property='og:url' content='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/'>
+<meta property='og:url' content='https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/'>
 <meta property='og:site_name' content='rhythm'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-04-25T20:45:59&#43;08:00'/><meta property='article:modified_time' content='2024-04-29T22:19:30&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-04-25T20:45:59&#43;08:00'/><meta property='article:modified_time' content='2024-04-29T22:19:30&#43;08:00'/><meta property='og:image' content='https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg' />
 <meta name="twitter:title" content="我的建站记录（一）">
 <meta name="twitter:description" content="#\r前言\r说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。 在进行了相关信息搜集后，最终决定基于GitHub+Hugo搭建博客，采用Stack 主题。 #\r基于GitHub Pages创建个人站点\rGitHub Pages是通过GitHub托管和发布的公共网页。 官方提供的教程为GitHub Pages 快速入门 - GitHub 文档，完成以后就可以通过username.github.io访问。 教程讲的也比较清晰，下边主要说一下我在创建过程中踩过的坑。 由于长时间没有登录github，在登录github时会发送验证码到注册邮箱，需要将验证码填入才可登录。现在问题来了，我的注册邮箱是QQ邮箱，然而QQ邮箱接收不到github发送来的邮件。 解决方法参考Github登录用qq邮箱验证无法收到验证码的问题，即把github.com添加到邮箱的域名白名单。 当时我这样做了以后还是收不到邮件，非常抓狂，然后睡了一觉起来后，发现QQ邮箱收到了好几封邮件&hellip;&hellip; 不过之后在github再发送邮件时，就能即时收到了。所以这个问题成功解决。 创建仓库时，仓库名与用户名不同导致无法访问网站。 根据关于 GitHub Pages - GitHub 文档上说的，“若要发布用户站点，必须创建名为\u00a0&lt;username&gt;.github.io\u00a0的个人帐户拥有的存储库。” 解决方法很简单，就是把仓库名改为和用户名一致就行。 另外存个单个github帐号下添加多个github pages的方法，以后尝试一下。 #\rHugo\r我的操作系统为Win11，下载安装Hugo有几种方法，我选择用包管理器Chocolatey来安装Hugo。 Chocolatey的安装教程为Chocolatey Software | Installing Chocolatey，就是通过powershell来安装。 之后执行命令choco install hugo-extended来安装Hugo的扩展版。 Hugo安装完成后，就可以使用Hugo快速生成站点： 1 hugo new site /path/to/site 在/path/to/site文件夹下可以看到网站结构。就不细说了。 #\rStack主题\r这里需要感谢这个视频600秒！带小白上手安装使用hugo-stack主题博客_哔哩哔哩_bilibili，让我最终把stack主题在github pages上呈现出来了。 test test again test again"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg' />
+    <meta name="twitter:image" content='https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg' />
     <link rel="shortcut icon" href="/favicon.jpg" />
 
   
@@ -578,8 +578,10 @@
         
         
         
-        发表了3篇文章 · 
-        总计0.16k字
+        
+        
+        发表了4篇文章 · 
+        总计0.18k字
     </section>
 
     

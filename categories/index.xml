@@ -2,17 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on rhythm</title>
-        <link>http://localhost:1313/categories/</link>
+        <link>https://cc922.github.io/categories/</link>
         <description>Recent content in Categories on rhythm</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Mon, 29 Apr 2024 23:36:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 May 2024 19:29:31 +0800</lastBuildDate><atom:link href="https://cc922.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>沙滩上的贝壳</title>
+        <link>https://cc922.github.io/categories/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E8%B4%9D%E5%A3%B3/</link>
+        <pubDate>Sun, 12 May 2024 19:29:31 +0800</pubDate>
+        
+        <guid>https://cc922.github.io/categories/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E8%B4%9D%E5%A3%B3/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>建站记录</title>
-        <link>http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
+        <link>https://cc922.github.io/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 29 Apr 2024 23:36:52 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</guid>
+        <guid>https://cc922.github.io/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</guid>
         <description></description>
         </item>
         
