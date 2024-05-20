@@ -7,7 +7,52 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Sun, 12 May 2024 19:29:31 +0800</lastBuildDate><atom:link href="https://cc922.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 20 May 2024 22:48:21 +0800</lastBuildDate><atom:link href="https://cc922.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows上安装Vim</title>
+        <link>https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</link>
+        <pubDate>Mon, 20 May 2024 22:48:21 +0800</pubDate>
+        
+        <guid>https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</guid>
+        <description>&lt;h2 id=&#34;前言&#34;&gt;
+    &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    前言
+&lt;/h2&gt;&lt;p&gt;linux自带了vim，但是目前想用vim的话，每次都得开虚拟机才能用linux里的vim。为了练习vim的相关操作，提高使用vim的熟练度，决定在Win系统里也安装上Vim。&lt;/p&gt;
+&lt;h2 id=&#34;下载vim到win系统&#34;&gt;
+    &lt;a href=&#34;#%e4%b8%8b%e8%bd%bdvim%e5%88%b0win%e7%b3%bb%e7%bb%9f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    下载Vim到Win系统
+&lt;/h2&gt;&lt;h3 id=&#34;方法1&#34;&gt;
+    &lt;a href=&#34;#%e6%96%b9%e6%b3%951&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    方法1
+&lt;/h3&gt;&lt;p&gt;直接打开powershell，输入命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winget install Vim
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;方法2&#34;&gt;
+    &lt;a href=&#34;#%e6%96%b9%e6%b3%952&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    方法2
+&lt;/h3&gt;&lt;p&gt;去&lt;a class=&#34;link&#34; href=&#34;https://www.vim.org/download.php#pc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vim官网&lt;/a&gt; 下载Win系统的安装包，然后点击下载好的exe文件，没有特殊要求的话，一路点击&amp;quot;next&amp;quot;安装即可。&lt;/p&gt;
+&lt;h2 id=&#34;配置系统变量&#34;&gt;
+    &lt;a href=&#34;#%e9%85%8d%e7%bd%ae%e7%b3%bb%e7%bb%9f%e5%8f%98%e9%87%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    配置系统变量
+&lt;/h2&gt;&lt;p&gt;安装好以后可能在powershell里运行vim会提示找不到对应的程序，因此需要配置环境变量。&lt;/p&gt;
+&lt;p&gt;直接Win+S快捷键，在底下的搜索栏里输入系统变量，选择环境变量-&amp;gt;系统变量-&amp;gt;Path，点击编辑，将Vim.exe所在目录添加进去，保存。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;F:%5cMyBlog%5cccsite%5cstatic%5cimg%5cwin-path.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>OTT</title>
         <link>https://cc922.github.io/p/ott/</link>
         <pubDate>Sun, 12 May 2024 19:29:31 +0800</pubDate>
