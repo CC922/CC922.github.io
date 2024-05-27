@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on rhythm</title>
-        <link>https://cc922.github.io/post/</link>
+        <link>http://localhost:1313/post/</link>
         <description>Recent content in Posts on rhythm</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Mon, 27 May 2024 21:59:05 +0800</lastBuildDate><atom:link href="https://cc922.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 May 2024 21:59:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Vim配置为IDE之踩坑记录</title>
-        <link>https://cc922.github.io/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 27 May 2024 21:59:05 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+        <guid>http://localhost:1313/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -98,10 +98,10 @@
         </item>
         <item>
         <title>Windows上安装Vim</title>
-        <link>https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</link>
+        <link>http://localhost:1313/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</link>
         <pubDate>Mon, 20 May 2024 22:48:21 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</guid>
+        <guid>http://localhost:1313/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -124,10 +124,10 @@
     配置系统变量
 &lt;/h2&gt;&lt;p&gt;安装好以后可能在powershell里运行vim会提示找不到对应的程序，因此需要配置环境变量。&lt;/p&gt;
 &lt;p&gt;直接Win+S快捷键，在底下的搜索栏里输入系统变量，选择环境变量-&amp;gt;系统变量-&amp;gt;Path，点击编辑，将Vim.exe所在目录添加进去，保存。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path.jpg&#34;
 	width=&#34;931&#34;
 	height=&#34;1074&#34;
-	srcset=&#34;https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_480x0_resize_q75_box.jpg 480w, https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -140,10 +140,10 @@
         </item>
         <item>
         <title>OTT</title>
-        <link>https://cc922.github.io/p/ott/</link>
+        <link>http://localhost:1313/p/ott/</link>
         <pubDate>Sun, 12 May 2024 19:29:31 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/ott/</guid>
+        <guid>http://localhost:1313/p/ott/</guid>
         <description>&lt;p&gt;今天碰到了OTT这个概念，觉得这个词体现了时代的发展变化，记录一下。&lt;/p&gt;
 &lt;h2 id=&#34;ott的概念&#34;&gt;
     &lt;a href=&#34;#ott%e7%9a%84%e6%a6%82%e5%bf%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -162,10 +162,10 @@
         </item>
         <item>
         <title>我的建站记录（三）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</link>
         <pubDate>Mon, 29 Apr 2024 23:36:52 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</guid>
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -179,14 +179,15 @@
     设置每页展示数量
 &lt;/h2&gt;&lt;p&gt;由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;paginate = 10  # 首页每页显示的文章数
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;test&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>我的建站记录（二）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</link>
         <pubDate>Sun, 28 Apr 2024 19:54:09 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/</guid>
         <description>&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
@@ -212,11 +213,11 @@
         </item>
         <item>
         <title>我的建站记录（一）</title>
-        <link>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+        <link>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
         <pubDate>Thu, 25 Apr 2024 20:45:59 +0800</pubDate>
         
-        <guid>https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
-        <description>&lt;img src="https://cc922.github.io/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
+        <guid>http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.jpg" alt="Featured image of post 我的建站记录（一）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;
     &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     前言
 &lt;/h2&gt;&lt;p&gt;说来惭愧，虽然从上大学开始就是敲代码的，但一直没有自己动手来搭建博客。趁着临近毕业前这段比较空闲的日子，终于开始动手搭博客了。&lt;/p&gt;
