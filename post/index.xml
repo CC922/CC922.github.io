@@ -7,7 +7,96 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright>
-        <lastBuildDate>Mon, 20 May 2024 22:48:21 +0800</lastBuildDate><atom:link href="https://cc922.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 May 2024 21:59:05 +0800</lastBuildDate><atom:link href="https://cc922.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vim配置为IDE之踩坑记录</title>
+        <link>https://cc922.github.io/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Mon, 27 May 2024 21:59:05 +0800</pubDate>
+        
+        <guid>https://cc922.github.io/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;h2 id=&#34;前言&#34;&gt;
+    &lt;a href=&#34;#%e5%89%8d%e8%a8%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    前言
+&lt;/h2&gt;&lt;p&gt;这篇博文是&lt;a class=&#34;link&#34; href=&#34;https://github.com/yangyangwithgnu/use_vim_as_ide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;use_vim_as_ide&lt;/a&gt;这个教程的实际实践记录，主要记录自己在按照该教程进行vim配置时遇到的问题以及解决方法。&lt;/p&gt;
+&lt;h2 id=&#34;虚拟机ubuntu设置代理&#34;&gt;
+    &lt;a href=&#34;#%e8%99%9a%e6%8b%9f%e6%9c%baubuntu%e8%ae%be%e7%bd%ae%e4%bb%a3%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    虚拟机ubuntu设置代理
+&lt;/h2&gt;&lt;h3 id=&#34;问题&#34;&gt;
+    &lt;a href=&#34;#%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    问题
+&lt;/h3&gt;&lt;p&gt;由于我的vim配置是在虚拟机ubuntu20.04上完成的，因此通过git拉取仓库代码也需要直接在虚拟机内操作。遇到的问题是，虽然我的主机使用了代理软件，但是在虚拟机内访问git的速度还是很慢甚至无法访问。&lt;/p&gt;
+&lt;h3 id=&#34;解决方法&#34;&gt;
+    &lt;a href=&#34;#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    解决方法
+&lt;/h3&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/tcjy1000/article/details/137356852&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;虚拟机 ubuntu 20.04 git 设置代理的方法_ubuntu git代理-CSDN博客&lt;/a&gt;来进行虚拟机的代理配置。&lt;/p&gt;
+&lt;p&gt;在主机上，我使用了代理软件Clash for Windows，在常规页面可以查到端口为7890，这个端口号就是代理软件运行的端口号。&lt;/p&gt;
+&lt;p&gt;在主机windows系统下使用&lt;code&gt;ipconfig&lt;/code&gt;获取主机ip地址，假设主机ip地址为&lt;code&gt;192.168.0.1&lt;/code&gt;，那么对于虚拟机ubuntu来说，其代理地址就是&lt;code&gt;192.168.0.1:7890&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;在虚拟机上，git设置代理的命令为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global https.proxy https://192.168.0.1:7890
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global http.proxy http://192.168.0.1:7890
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;设置后，即可通过代理来进行git仓库代码拉取。&lt;/p&gt;
+&lt;h2 id=&#34;vim的源码安装以及插件管理&#34;&gt;
+    &lt;a href=&#34;#vim%e7%9a%84%e6%ba%90%e7%a0%81%e5%ae%89%e8%a3%85%e4%bb%a5%e5%8f%8a%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Vim的源码安装以及插件管理
+&lt;/h2&gt;&lt;h3 id=&#34;问题-1&#34;&gt;
+    &lt;a href=&#34;#%e9%97%ae%e9%a2%98-1&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    问题
+&lt;/h3&gt;&lt;p&gt;根据&lt;a class=&#34;link&#34; href=&#34;https://github.com/yangyangwithgnu/use_vim_as_ide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;use_vim_as_ide&lt;/a&gt;教程所说，为了使用未被功能阉割的vim全功能最新版，需要通过git来拉取最新仓库代码进行编译安装，具体操作按教程来就行，我的问题在于python的配置。&lt;/p&gt;
+&lt;p&gt;主要有以下几个问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;python2.7目录下没有config目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vundle的.vimrc配置信息有错误。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正确配置了python2.7和python3，并且安装插件以后，在vim执行遇到问题&lt;code&gt; YouCompleteMe unavailable: unable to load Python&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;解决方式&#34;&gt;
+    &lt;a href=&#34;#%e8%a7%a3%e5%86%b3%e6%96%b9%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    解决方式
+&lt;/h3&gt;&lt;h4 id=&#34;通过安装python27-dev包来获取python-config&#34;&gt;
+    &lt;a href=&#34;#%e9%80%9a%e8%bf%87%e5%ae%89%e8%a3%85python27-dev%e5%8c%85%e6%9d%a5%e8%8e%b7%e5%8f%96python-config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    通过安装python2.7-dev包来获取python-config
+&lt;/h4&gt;&lt;p&gt;虽然在ubuntu系统上已经安装了python2.7，但是通常情况下python2.7的配置文件python-config不会自动安装。因此需要在ubuntu上安装python2.7-dev包：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install python2.7-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后，一般情况下便可在/usr/lib/python2.7下找到&lt;code&gt;config-x86_64-linux-gnu&lt;/code&gt;。如此便可以正确填入vim的./configure有关python的配置信息了，我的是：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./configure --with-features&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;huge --enable-python3interp --enable-pythoninterp --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python3-config-dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/ --with-python-config-dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-gui&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;gtk2 --enable-cscope --prefix&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中和python相关的是：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--enable-python3interp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--enable-pythoninterp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--with-python3-config-dir=/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后&lt;code&gt;make &amp;amp;&amp;amp; make install&lt;/code&gt; 成功安装vim以后，可以通过&lt;code&gt;vim --version|grep python&lt;/code&gt;的命令来查看vim对python的支持情况为“+python/dyn”和“+python3/dyn”,表示成功安装了python。&lt;/p&gt;
+&lt;h4 id=&#34;修改vundle的配置信息&#34;&gt;
+    &lt;a href=&#34;#%e4%bf%ae%e6%94%b9vundle%e7%9a%84%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    修改vundle的配置信息
+&lt;/h4&gt;&lt;p&gt;将&lt;a class=&#34;link&#34; href=&#34;https://github.com/yangyangwithgnu/use_vim_as_ide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;use_vim_as_ide&lt;/a&gt;教程里的vundle的配置信息写入.vimrc文件执行后会遇到有关语法错误的报错信息。为了解决这一问题，需要在有关vundle的配置信息前增加一句话：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set nocompatible
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这句话的作用是使Vim不使用vi兼容模式，而是使用Vim正常模式。因为Vim的脚本语言和插件系统需要Vim处于非兼容模式才能正常工作。&lt;/p&gt;
+&lt;h4 id=&#34;重新配置vim的python版本&#34;&gt;
+    &lt;a href=&#34;#%e9%87%8d%e6%96%b0%e9%85%8d%e7%bd%aevim%e7%9a%84python%e7%89%88%e6%9c%ac&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    重新配置vim的python版本
+&lt;/h4&gt;&lt;p&gt;在配置了.vimrc的vundle相关信息并在vim里执行&lt;code&gt;:PluginInstall&lt;/code&gt;命令来安装好插件后，启动vim会遇到问题&lt;code&gt;YouCompleteMe unavailable: unable to load Python&lt;/code&gt;,我的解决方法参考了&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/61240101/youcompleteme-unavailable-unable-to-load-python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;linux - YouCompleteMe unavailable: unable to load Python - Stack Overflow&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/23023783/vim-compiled-with-python-support-but-cant-see-sys-version&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vim compiled with Python support but can&#39;t see sys version - Stack Overflow&lt;/a&gt;两个网页的内容。&lt;/p&gt;
+&lt;p&gt;详细来说，&lt;code&gt;YouCompleteMe&lt;/code&gt;插件从2020年起不再支持python2，因此需要用python3来对其进行编译。&lt;/p&gt;
+&lt;p&gt;但是在vim通过命令&lt;code&gt;:python import sys; print(sys.version)&lt;/code&gt; 查看vim使用哪个版本的python时又遇到报错如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;E448&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Could&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;library&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_PyArg_Parse_SizeT&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;E263&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Sorry&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;this&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Python&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;library&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;could&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;be&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;loaded&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;原因是基于ubuntu的Debian系统，无法同时加载两个python库。因此考虑到&lt;code&gt;YouCompleteMe&lt;/code&gt;插件需要通过python3版本进行编译，所以我重新进入git clone下来的vim目录，将./configure去掉了python2相关，重新执行该命令并进行make和make install。之后通过&lt;code&gt;vim --version|grep python&lt;/code&gt;的命令来查看vim对python的支持情况为“-python/”和“+python3”，则当前vim只支持python3。&lt;/p&gt;
+&lt;p&gt;之后在启动vim时便不会有&lt;code&gt;YouCompleteMe unavailable: unable to load Python&lt;/code&gt;这一错误，但是启动vim时会有错误&lt;code&gt;YCM error. The ycmd server SHUT DOWN (restart wit...the instructions in the documentation&lt;/code&gt;。解决方法参考链接&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/47667119/ycm-error-the-ycmd-server-shut-down-restart-wit-the-instructions-in-the-docu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;vim - YCM error. The ycmd server SHUT DOWN (restart wit&amp;hellip;the instructions in the documentation - Stack Overflow&lt;/a&gt;，具体为进入&lt;code&gt;~.vim/bundle/YouCompleteMe&lt;/code&gt;目录并运行 &lt;code&gt;python install.py&lt;/code&gt;命令。&lt;/p&gt;
+&lt;p&gt;到此为止该章节遇到的问题均已解决。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Windows上安装Vim</title>
         <link>https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/</link>
         <pubDate>Mon, 20 May 2024 22:48:21 +0800</pubDate>
@@ -24,15 +113,8 @@
     &lt;a href=&#34;#%e6%96%b9%e6%b3%951&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     方法1
 &lt;/h3&gt;&lt;p&gt;直接打开powershell，输入命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winget install Vim
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;方法2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winget install Vim
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;方法2&#34;&gt;
     &lt;a href=&#34;#%e6%96%b9%e6%b3%952&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     方法2
 &lt;/h3&gt;&lt;p&gt;去&lt;a class=&#34;link&#34; href=&#34;https://www.vim.org/download.php#pc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -42,7 +124,19 @@
     配置系统变量
 &lt;/h2&gt;&lt;p&gt;安装好以后可能在powershell里运行vim会提示找不到对应的程序，因此需要配置环境变量。&lt;/p&gt;
 &lt;p&gt;直接Win+S快捷键，在底下的搜索栏里输入系统变量，选择环境变量-&amp;gt;系统变量-&amp;gt;Path，点击编辑，将Vim.exe所在目录添加进去，保存。&lt;/p&gt;
-&lt;img title=&#34;配置系统变量&#34; src=&#34;win-path.jpg&#34; alt=&#34;系统变量&#34; data-align=&#34;center&#34; width=&#34;375&#34;&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path.jpg&#34;
+	width=&#34;931&#34;
+	height=&#34;1074&#34;
+	srcset=&#34;https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_480x0_resize_q75_box.jpg 480w, https://cc922.github.io/p/windows%E4%B8%8A%E5%AE%89%E8%A3%85vim/win-path_hudeb7a8dc2da8efc45a66cd02ea4925c8_67429_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;86&#34;
+		data-flex-basis=&#34;208px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>OTT</title>
@@ -80,9 +174,12 @@
     &lt;a href=&#34;#%e6%98%be%e7%a4%ba%e6%9c%80%e5%90%8e%e6%9b%b4%e6%96%b0%e6%97%b6%e9%97%b4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     显示最后更新时间
 &lt;/h2&gt;&lt;p&gt;花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。&lt;/p&gt;
-&lt;p&gt;test&lt;/p&gt;
-&lt;p&gt;test&lt;/p&gt;
-</description>
+&lt;h2 id=&#34;设置每页展示数量&#34;&gt;
+    &lt;a href=&#34;#%e8%ae%be%e7%bd%ae%e6%af%8f%e9%a1%b5%e5%b1%95%e7%a4%ba%e6%95%b0%e9%87%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    设置每页展示数量
+&lt;/h2&gt;&lt;p&gt;由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;paginate = 10  # 首页每页显示的文章数
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>我的建站记录（二）</title>
@@ -162,15 +259,8 @@
     &gt;Chocolatey Software | Installing Chocolatey&lt;/a&gt;，就是通过powershell来安装。&lt;/p&gt;
 &lt;p&gt;之后执行命令&lt;code&gt;choco install hugo-extended&lt;/code&gt;来安装Hugo的扩展版。&lt;/p&gt;
 &lt;p&gt;Hugo安装完成后，就可以使用Hugo快速生成站点：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site /path/to/site
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在/path/to/site文件夹下可以看到网站结构。就不细说了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site /path/to/site
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在/path/to/site文件夹下可以看到网站结构。就不细说了。&lt;/p&gt;
 &lt;h2 id=&#34;stack主题&#34;&gt;
     &lt;a href=&#34;#stack%e4%b8%bb%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Stack主题
