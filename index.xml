@@ -178,7 +178,8 @@
     设置每页展示数量
 &lt;/h2&gt;&lt;p&gt;由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;paginate = 10  # 首页每页显示的文章数
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;test last modify time&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>我的建站记录（二）</title>
