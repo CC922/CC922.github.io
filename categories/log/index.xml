@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>LOG on rhythm</title>
+        <link>http://localhost:1313/categories/log/</link>
+        <description>Recent content in LOG on rhythm</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>rhythm</copyright>
+        <lastBuildDate>Sun, 09 Feb 2025 22:50:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/log/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>新年新气象 多多记录吧</title>
+        <link>http://localhost:1313/p/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1-%E5%A4%9A%E5%A4%9A%E8%AE%B0%E5%BD%95%E5%90%A7/</link>
+        <pubDate>Sun, 09 Feb 2025 22:50:06 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1-%E5%A4%9A%E5%A4%9A%E8%AE%B0%E5%BD%95%E5%90%A7/</guid>
+        <description>&lt;p&gt;看到有人通过个人微信公众号的方式写周记，我感觉这是一个很好的习惯，自己也应该培养一下。正好这是过完年开工的第一个周末，就从这周开始写周记吧（也许是不定期的？总之希望可以多写）。&lt;/p&gt;
+&lt;p&gt;至于写周记的平台，这个博客搭完以后就没再用了，现在正好重新利用起来。&lt;/p&gt;
+&lt;p&gt;新年新气象，开始多多记录吧！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

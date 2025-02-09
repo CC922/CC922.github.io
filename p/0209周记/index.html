@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 #\r设置每页展示数量\r由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。 paginate = 10 # 首页每页显示的文章数 test last modify time">
-<title>我的建站记录（三）</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#\r写在前边\r看到有人通过个人微信公众号的方式写周记，我感觉这是一个很好的习惯，自己也应该培养一下。正好这是过完年开工的第一个周末，就从这周开始写周记吧（也许是不定期的？总之希望可以多写）。 至于写周记的平台，这个博客搭完以后就没再用了，现在正好重新利用起来。 新年新气象，开始多多记录吧！ #\r胡言乱语\r很久很久没有这样输出过了，真正开始写的时候觉得自己的语言表达能力都下降了。 初八开工以后就投入需求开发了，在公司内网里有在写wiki，记录需求相关的学习和遇到的问题。在自己的博客里就写写做这个需求的心得吧。但是现在不太想动脑子，那就随后再说吧，反正这个需求也还没做完。 其实感觉自己越来越封闭自己的内心了，很多事情都烂在心里了。这是成长吗？不知道。 自从高中读了辛弃疾的这首词，在每个当下，我都一直觉得自己处在第二个阶段。然后，隔段时间就笑之前的自己是在强说愁，认为当前的自己才是识尽愁滋味了。如此循环往复。 少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。 而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。 但是，现在的我是真的觉得自己在第二阶段了。">
+<title>0209周记</title>
 
-<link rel='canonical' href='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/'>
+<link rel='canonical' href='http://localhost:1313/p/0209%E5%91%A8%E8%AE%B0/'>
 
-<link rel="stylesheet" href="/scss/style.min.c5a51624653d201e84fd08949caed844f03fb22377450813fef5d80037fc3a94.css"><meta property='og:title' content="我的建站记录（三）">
-<meta property='og:description' content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 #\r设置每页展示数量\r由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。 paginate = 10 # 首页每页显示的文章数 test last modify time">
-<meta property='og:url' content='http://localhost:1313/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/'>
+<link rel="stylesheet" href="/scss/style.min.c5a51624653d201e84fd08949caed844f03fb22377450813fef5d80037fc3a94.css"><meta property='og:title' content="0209周记">
+<meta property='og:description' content="#\r写在前边\r看到有人通过个人微信公众号的方式写周记，我感觉这是一个很好的习惯，自己也应该培养一下。正好这是过完年开工的第一个周末，就从这周开始写周记吧（也许是不定期的？总之希望可以多写）。 至于写周记的平台，这个博客搭完以后就没再用了，现在正好重新利用起来。 新年新气象，开始多多记录吧！ #\r胡言乱语\r很久很久没有这样输出过了，真正开始写的时候觉得自己的语言表达能力都下降了。 初八开工以后就投入需求开发了，在公司内网里有在写wiki，记录需求相关的学习和遇到的问题。在自己的博客里就写写做这个需求的心得吧。但是现在不太想动脑子，那就随后再说吧，反正这个需求也还没做完。 其实感觉自己越来越封闭自己的内心了，很多事情都烂在心里了。这是成长吗？不知道。 自从高中读了辛弃疾的这首词，在每个当下，我都一直觉得自己处在第二个阶段。然后，隔段时间就笑之前的自己是在强说愁，认为当前的自己才是识尽愁滋味了。如此循环往复。 少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。 而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。 但是，现在的我是真的觉得自己在第二阶段了。">
+<meta property='og:url' content='http://localhost:1313/p/0209%E5%91%A8%E8%AE%B0/'>
 <meta property='og:site_name' content='rhythm'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-04-29T23:36:52&#43;08:00'/><meta property='article:modified_time' content='2025-02-09T22:53:50&#43;08:00'/><meta property='og:image' content='http://localhost:1313/' />
-<meta name="twitter:title" content="我的建站记录（三）">
-<meta name="twitter:description" content="#\r前言\r这一篇主要记录一下在修改stack主题的过程中遇到的问题。 #\r显示最后更新时间\r花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。 #\r设置每页展示数量\r由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。 paginate = 10 # 首页每页显示的文章数 test last modify time"><meta name="twitter:card" content="summary_large_image">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-09T22:50:06&#43;08:00'/><meta property='article:modified_time' content='2025-02-09T22:53:50&#43;08:00'/><meta property='og:image' content='http://localhost:1313/' />
+<meta name="twitter:title" content="0209周记">
+<meta name="twitter:description" content="#\r写在前边\r看到有人通过个人微信公众号的方式写周记，我感觉这是一个很好的习惯，自己也应该培养一下。正好这是过完年开工的第一个周末，就从这周开始写周记吧（也许是不定期的？总之希望可以多写）。 至于写周记的平台，这个博客搭完以后就没再用了，现在正好重新利用起来。 新年新气象，开始多多记录吧！ #\r胡言乱语\r很久很久没有这样输出过了，真正开始写的时候觉得自己的语言表达能力都下降了。 初八开工以后就投入需求开发了，在公司内网里有在写wiki，记录需求相关的学习和遇到的问题。在自己的博客里就写写做这个需求的心得吧。但是现在不太想动脑子，那就随后再说吧，反正这个需求也还没做完。 其实感觉自己越来越封闭自己的内心了，很多事情都烂在心里了。这是成长吗？不知道。 自从高中读了辛弃疾的这首词，在每个当下，我都一直觉得自己处在第二个阶段。然后，隔段时间就笑之前的自己是在强说愁，认为当前的自己才是识尽愁滋味了。如此循环往复。 少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。 而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。 但是，现在的我是真的觉得自己在第二阶段了。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='http://localhost:1313/' />
     <link rel="shortcut icon" href="/favicon.jpg" />
 
@@ -268,9 +268,8 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#前言">前言</a></li>
-    <li><a href="#显示最后更新时间">显示最后更新时间</a></li>
-    <li><a href="#设置每页展示数量">设置每页展示数量</a></li>
+    <li><a href="#写在前边">写在前边</a></li>
+    <li><a href="#胡言乱语">胡言乱语</a></li>
   </ol>
 </nav>
         </div>
@@ -289,8 +288,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/" >
-                建站记录
+            <a href="/categories/log/" >
+                LOG
             </a>
         
     </header>
@@ -298,7 +297,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%89/">我的建站记录（三）</a>
+            <a href="/p/0209%E5%91%A8%E8%AE%B0/">0209周记</a>
         </h2>
     
         
@@ -320,7 +319,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-04-29</time>
+                <time class="article-time--published">2025-02-09</time>
             </div>
         
 
@@ -336,20 +335,22 @@
     <section class="article-content">
     
     
-    <h2 id="前言">
-    <a href="#%e5%89%8d%e8%a8%80" class="header-anchor">#</a>
-    前言
-</h2><p>这一篇主要记录一下在修改stack主题的过程中遇到的问题。</p>
-<h2 id="显示最后更新时间">
-    <a href="#%e6%98%be%e7%a4%ba%e6%9c%80%e5%90%8e%e6%9b%b4%e6%96%b0%e6%97%b6%e9%97%b4" class="header-anchor">#</a>
-    显示最后更新时间
-</h2><p>花了挺长时间搞这个，最后虽然搞出来了，但是也还是似懂非懂。</p>
-<h2 id="设置每页展示数量">
-    <a href="#%e8%ae%be%e7%bd%ae%e6%af%8f%e9%a1%b5%e5%b1%95%e7%a4%ba%e6%95%b0%e9%87%8f" class="header-anchor">#</a>
-    设置每页展示数量
-</h2><p>由于stack模板自带的每页的显示文章数较少，因此可以在配置文件hugo.yaml里进行设置。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">paginate = 10  # 首页每页显示的文章数
-</span></span></code></pre></div><p>test last modify time</p>
+    <h2 id="写在前边">
+    <a href="#%e5%86%99%e5%9c%a8%e5%89%8d%e8%be%b9" class="header-anchor">#</a>
+    写在前边
+</h2><p>看到有人通过个人微信公众号的方式写周记，我感觉这是一个很好的习惯，自己也应该培养一下。正好这是过完年开工的第一个周末，就从这周开始写周记吧（也许是不定期的？总之希望可以多写）。</p>
+<p>至于写周记的平台，这个博客搭完以后就没再用了，现在正好重新利用起来。</p>
+<p>新年新气象，开始多多记录吧！</p>
+<h2 id="胡言乱语">
+    <a href="#%e8%83%a1%e8%a8%80%e4%b9%b1%e8%af%ad" class="header-anchor">#</a>
+    胡言乱语
+</h2><p>很久很久没有这样输出过了，真正开始写的时候觉得自己的语言表达能力都下降了。</p>
+<p>初八开工以后就投入需求开发了，在公司内网里有在写wiki，记录需求相关的学习和遇到的问题。在自己的博客里就写写做这个需求的心得吧。但是现在不太想动脑子，那就随后再说吧，反正这个需求也还没做完。</p>
+<p>其实感觉自己越来越封闭自己的内心了，很多事情都烂在心里了。这是成长吗？不知道。</p>
+<p>自从高中读了辛弃疾的这首词，在每个当下，我都一直觉得自己处在第二个阶段。然后，隔段时间就笑之前的自己是在强说愁，认为当前的自己才是识尽愁滋味了。如此循环往复。</p>
+<p>　<strong>少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。</strong></p>
+<p>　<strong>而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。</strong></p>
+<p>但是，现在的我是真的觉得自己在第二阶段了。</p>
 
 </section>
 
@@ -413,52 +414,6 @@
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">相关文章</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%BA%8C/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">我的建站记录（二）</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%E4%B8%80/cat.66d7b796377883a92aad65b283ef1f84_huf4dd7b3e20629ea71c22c9d402948030_1046041_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 我的建站记录（一）"
-                        
-                        data-hash="md5-Zte3ljd4g6kqrWWyg&#43;8fhA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">我的建站记录（一）</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
