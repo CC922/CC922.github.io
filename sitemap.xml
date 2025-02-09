@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/p/0209%E5%91%A8%E8%AE%B0/</loc>
+    <lastmod>2025-02-09T22:53:50+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-02-09T22:53:50+08:00</lastmod>
   </url><url>
@@ -9,9 +12,6 @@
     <lastmod>2025-02-09T22:53:50+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-02-09T22:53:50+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1-%E5%A4%9A%E5%A4%9A%E8%AE%B0%E5%BD%95%E5%90%A7/</loc>
     <lastmod>2025-02-09T22:53:50+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/c_variable_type/</loc>
