@@ -7,6 +7,47 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>rhythm</copyright><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>杂记</title>
+        <link>http://localhost:1313/p/%E6%9D%82%E8%AE%B0/</link>
+        <pubDate>Sun, 09 Feb 2025 22:50:06 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%9D%82%E8%AE%B0/</guid>
+        <description>&lt;h1 id=&#34;test&#34;&gt;
+    &lt;a href=&#34;#test&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    TEST
+&lt;/h1&gt;</description>
+        </item>
+        <item>
+        <title>C_variable_type</title>
+        <link>http://localhost:1313/p/c_variable_type/</link>
+        <pubDate>Tue, 04 Jun 2024 19:58:43 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/c_variable_type/</guid>
+        <description>&lt;h2 id=&#34;double类型&#34;&gt;
+    &lt;a href=&#34;#double%e7%b1%bb%e5%9e%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    double类型
+&lt;/h2&gt;&lt;p&gt;double的极大值与极小值加法运算结果丢失。&lt;/p&gt;
+&lt;h2 id=&#34;unsigned-short类型&#34;&gt;
+    &lt;a href=&#34;#unsigned-short%e7%b1%bb%e5%9e%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    unsigned short类型
+&lt;/h2&gt;&lt;p&gt;i=65536时，s造成无符号数环绕为0，绕过了检查，&lt;/p&gt;
+&lt;p&gt;无符号整型的&lt;/p&gt;
+&lt;p&gt;无符号变量与有符号变量进行if判断时，有符号数会先转换为无符号数。&lt;/p&gt;
+&lt;p&gt;参数化模型框架中，要求使用TEST_P封装测试用例，并确保第一个参数于测试对象名称保持一致&lt;/p&gt;
+&lt;h2 id=&#34;设计模式&#34;&gt;
+    &lt;a href=&#34;#%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    设计模式
+&lt;/h2&gt;&lt;p&gt;抽象工厂模式&lt;/p&gt;
+&lt;p&gt;工厂模式&lt;/p&gt;
+&lt;h2 id=&#34;const&#34;&gt;
+    &lt;a href=&#34;#const&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    const
+&lt;/h2&gt;&lt;h2 id=&#34;排序算法&#34;&gt;
+    &lt;a href=&#34;#%e6%8e%92%e5%ba%8f%e7%ae%97%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    排序算法
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>Vim配置为IDE之踩坑记录</title>
         <link>http://localhost:1313/p/vim%E9%85%8D%E7%BD%AE%E4%B8%BAide%E4%B9%8B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 27 May 2024 21:59:05 +0800</pubDate>
